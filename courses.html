@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses — EduConnect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+            <a href="index.html">
+                <img src="images/logo.png" alt="EduConnect Logo" class="h-10 w-auto">
+            </a>
+
+            <div class="hidden md:flex items-center gap-6 font-medium text-gray-600">
+                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="courses.html" class="text-blue-600 font-semibold">Courses</a>
+                <a href="about.html" class="hover:text-blue-600">About</a>
+                <a href="contact.html" class="hover:text-blue-600">Contact</a>
+            </div>
+
+            <div class="hidden lg:flex items-center">
+                <input type="text" placeholder="Search for any courses"
+                    class="border border-gray-300 rounded-l-lg px-3 py-1.5 text-sm focus:outline-none focus:border-blue-500">
+                <button
+                    class="bg-blue-600 text-white px-3 py-1.5 text-sm rounded-r-lg hover:bg-blue-700">Search</button>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <a href="register.html" class="text-gray-700 text-sm font-medium hover:text-blue-600">Login</a>
+                <a href="register.html"
+                    class="bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-blue-700">Sign
+                    Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="bg-white border-b border-gray-200 py-8">
+        <div class="max-w-7xl mx-auto px-4">
+            <h1 class="text-2xl md:text-3xl font-bold text-gray-900">Explore All Courses</h1>
+            <p class="text-gray-500 text-sm mt-1">Discover 12+ industry-ready courses to advance your skills and career.
+            </p>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-4 py-8 bg-yellow-500">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+
+            <aside class="bg-white p-5 rounded-lg border border-gray-200 h-fit space-y-6">
+                <div>
+                    <h3 class="font-bold text-gray-900 text-base mb-3">Search</h3>
+                    <input type="text" placeholder="Search by keywords"
+                        class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-blue-500">
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-gray-900 text-sm mb-2">Category</h3>
+                    <div class="space-y-1.5 text-sm text-gray-600">
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" checked class="rounded text-blue-600">
+                            <span>Web Development</span>
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" class="rounded text-blue-600">
+                            <span>Data Science & AI</span>
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" class="rounded text-blue-600">
+                            <span>UI/UX Design</span>
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" class="rounded text-blue-600">
+                            <span>Cloud & DevOps</span>
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" class="rounded text-blue-600">
+                            <span>Mobile Development</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-gray-900 text-sm mb-2">Difficulty Level</h3>
+                    <div class="space-y-1.5 text-sm text-gray-600">
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" class="rounded text-blue-600">
+                            <span>Beginner</span>
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" class="rounded text-blue-600">
+                            <span>Intermediate</span>
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" class="rounded text-blue-600">
+                            <span>Advanced</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-gray-900 text-sm mb-2">Price</h3>
+                    <div class="space-y-1.5 text-sm text-gray-600">
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="radio" name="price" checked class="text-blue-600">
+                            <span>All Prices</span>
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="radio" name="price" class="text-blue-600">
+                            <span>Paid Courses</span>
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="radio" name="price" class="text-blue-600">
+                            <span>Free Courses</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button
+                    class="w-full bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-semibold py-2 rounded-lg">
+                    Reset Filters
+                </button>
+            </aside>
+
+
+            <div class="lg:col-span-3 space-y-6">
+
+                <div
+                    class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-white p-4 rounded-lg border border-gray-200">
+                    <p class="text-sm text-gray-600">Showing <span class="font-bold text-gray-900">1–12</span> of 24
+                        courses</p>
+                    <div class="flex items-center gap-2">
+                        <label for="sort" class="text-sm text-gray-600">Sort by:</label>
+                        <select id="sort"
+                            class="border border-gray-300 rounded px-2.5 py-1 text-sm text-gray-700 focus:outline-none focus:bg-blue-200 focus:transition">
+                            <option>Most Popular</option>
+                            <option>Highest Rated</option>
+                            <option>Newest</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+
+                    <!-- Course 1 -->
+                    <div
+                        class="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between h-full">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=500&auto=format&fit=crop&q=80"
+                                alt="Full-Stack Web Dev" class="h-44 w-full object-cover">
+                            <span
+                                class="absolute top-2 left-2 bg-yellow-400 text-gray-900 text-[11px] font-bold px-2 py-0.5 rounded">Bestseller</span>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between text-xs text-gray-500 mb-1">
+                                    <span>⏱ 8 Weeks</span>
+                                    <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded">Beginner</span>
+                                </div>
+                                <h3 class="font-bold text-gray-900 text-sm mt-1">Full-Stack Web Development Bootcamp
+                                </h3>
+                                <p class="text-xs text-gray-500 mt-1">Learn HTML, CSS, JavaScript, React, and Node.js
+                                    with real projects.</p>
+                                <p class="text-xs text-gray-600 font-medium mt-2">Instructor: John Carter</p>
+                                <p class="text-xs text-yellow-500 font-semibold mt-1">★ 4.8 (1,250)</p>
+                            </div>
+                            <div class="flex justify-between items-center mt-4 pt-3 border-t">
+                                <span class="text-base font-bold text-gray-900">$49.99</span>
+                                <a href="course-details.html"
+                                    class="text-xs bg-blue-600 text-white px-3 py-1.5 rounded hover:bg-blue-700">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 2 -->
+                    <div
+                        class="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between h-full">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=500&auto=format&fit=crop&q=80"
+                                alt="Python Data Science" class="h-44 w-full object-cover">
+                            <span
+                                class="absolute top-2 left-2 bg-green-500 text-white text-[11px] font-bold px-2 py-0.5 rounded">New</span>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between text-xs text-gray-500 mb-1">
+                                    <span>⏱ 10 Weeks</span>
+                                    <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded">Intermediate</span>
+                                </div>
+                                <h3 class="font-bold text-gray-900 text-sm mt-1">Python for Data Science & Machine
+                                    Learning</h3>
+                                <p class="text-xs text-gray-500 mt-1">Analyze big datasets and train machine learning
+                                    models from scratch.</p>
+                                <p class="text-xs text-gray-600 font-medium mt-2">Instructor: Sarah Chen</p>
+                                <p class="text-xs text-yellow-500 font-semibold mt-1">★ 4.9 (980)</p>
+                            </div>
+                            <div class="flex justify-between items-center mt-4 pt-3 border-t">
+                                <span class="text-base font-bold text-gray-900">$59.99</span>
+                                <a href="course-details.html"
+                                    class="text-xs bg-blue-600 text-white px-3 py-1.5 rounded hover:bg-blue-700">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 3 -->
+                    <div
+                        class="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between h-full">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=500&auto=format&fit=crop&q=80"
+                                alt="Figma UI/UX" class="h-44 w-full object-cover">
+                            <span
+                                class="absolute top-2 left-2 bg-purple-600 text-white text-[11px] font-bold px-2 py-0.5 rounded">Featured</span>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between text-xs text-gray-500 mb-1">
+                                    <span>⏱ 6 Weeks</span>
+                                    <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded">All Levels</span>
+                                </div>
+                                <h3 class="font-bold text-gray-900 text-sm mt-1">UI/UX Design Masterclass in Figma</h3>
+                                <p class="text-xs text-gray-500 mt-1">Design user interfaces, mobile apps, and clickable
+                                    prototypes.</p>
+                                <p class="text-xs text-gray-600 font-medium mt-2">Instructor: Alex Vance</p>
+                                <p class="text-xs text-yellow-500 font-semibold mt-1">★ 4.7 (840)</p>
+                            </div>
+                            <div class="flex justify-between items-center mt-4 pt-3 border-t">
+                                <span class="text-base font-bold text-gray-900">$39.99</span>
+                                <a href="course-details.html"
+                                    class="text-xs bg-blue-600 text-white px-3 py-1.5 rounded hover:bg-blue-700">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 4 -->
+                    <div
+                        class="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between h-full">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&auto=format&fit=crop&q=80"
+                                alt="AWS Cloud" class="h-44 w-full object-cover">
+                            <span
+                                class="absolute top-2 left-2 bg-yellow-400 text-gray-900 text-[11px] font-bold px-2 py-0.5 rounded">Bestseller</span>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between text-xs text-gray-500 mb-1">
+                                    <span>⏱ 12 Weeks</span>
+                                    <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded">Advanced</span>
+                                </div>
+                                <h3 class="font-bold text-gray-900 text-sm mt-1">AWS Cloud Solutions & DevOps Pipeline
+                                </h3>
+                                <p class="text-xs text-gray-500 mt-1">Deploy, scale, and manage infrastructure in cloud
+                                    environments.</p>
+                                <p class="text-xs text-gray-600 font-medium mt-2">Instructor: Priya Patel</p>
+                                <p class="text-xs text-yellow-500 font-semibold mt-1">★ 4.8 (650)</p>
+                            </div>
+                            <div class="flex justify-between items-center mt-4 pt-3 border-t">
+                                <span class="text-base font-bold text-gray-900">$64.99</span>
+                                <a href="course-details.html"
+                                    class="text-xs bg-blue-600 text-white px-3 py-1.5 rounded hover:bg-blue-700">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 5 -->
+                    <div
+                        class="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between h-full">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500&auto=format&fit=crop&q=80"
+                                alt="Ethical Hacking" class="h-44 w-full object-cover">
+                            <span
+                                class="absolute top-2 left-2 bg-red-500 text-white text-[11px] font-bold px-2 py-0.5 rounded">Discounted</span>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between text-xs text-gray-500 mb-1">
+                                    <span>⏱ 9 Weeks</span>
+                                    <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded">Intermediate</span>
+                                </div>
+                                <h3 class="font-bold text-gray-900 text-sm mt-1">Cyber Security & Ethical Hacking</h3>
+                                <p class="text-xs text-gray-500 mt-1">Master network defenses, vulnerability
+                                    assessments, and web security.</p>
+                                <p class="text-xs text-gray-600 font-medium mt-2">Instructor: David Miller</p>
+                                <p class="text-xs text-yellow-500 font-semibold mt-1">★ 4.9 (1,100)</p>
+                            </div>
+                            <div class="flex justify-between items-center mt-4 pt-3 border-t">
+                                <span class="text-base font-bold text-gray-900">$54.99</span>
+                                <a href="course-details.html"
+                                    class="text-xs bg-blue-600 text-white px-3 py-1.5 rounded hover:bg-blue-700">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 6 -->
+                    <div
+                        class="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between h-full">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&auto=format&fit=crop&q=80"
+                                alt="Flutter Mobile" class="h-44 w-full object-cover">
+                            <span
+                                class="absolute top-2 left-2 bg-green-500 text-white text-[11px] font-bold px-2 py-0.5 rounded">New</span>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between text-xs text-gray-500 mb-1">
+                                    <span>⏱ 8 Weeks</span>
+                                    <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded">Beginner</span>
+                                </div>
+                                <h3 class="font-bold text-gray-900 text-sm mt-1">Flutter & Dart Mobile App Development
+                                </h3>
+                                <p class="text-xs text-gray-500 mt-1">Build native iOS and Android apps with a single
+                                    modern codebase.</p>
+                                <p class="text-xs text-gray-600 font-medium mt-2">Instructor: Elena Rossi</p>
+                                <p class="text-xs text-yellow-500 font-semibold mt-1">★ 4.7 (720)</p>
+                            </div>
+                            <div class="flex justify-between items-center mt-4 pt-3 border-t">
+                                <span class="text-base font-bold text-gray-900">$44.99</span>
+                                <a href="course-details.html"
+                                    class="text-xs bg-blue-600 text-white px-3 py-1.5 rounded hover:bg-blue-700">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 7 -->
+                    <div
+                        class="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between h-full">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=80"
+                                alt="Digital Marketing" class="h-44 w-full object-cover">
+                            <span
+                                class="absolute top-2 left-2 bg-purple-600 text-white text-[11px] font-bold px-2 py-0.5 rounded">Featured</span>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between text-xs text-gray-500 mb-1">
+                                    <span>⏱ 5 Weeks</span>
+                                    <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded">Beginner</span>
+                                </div>
+                                <h3 class="font-bold text-gray-900 text-sm mt-1">Digital Marketing & Growth SEO</h3>
+                                <p class="text-xs text-gray-500 mt-1">Learn search engine optimization, Google Ads, and
+                                    social strategy.</p>
+                                <p class="text-xs text-gray-600 font-medium mt-2">Instructor: Mark Taylor</p>
+                                <p class="text-xs text-yellow-500 font-semibold mt-1">★ 4.6 (590)</p>
+                            </div>
+                            <div class="flex justify-between items-center mt-4 pt-3 border-t">
+                                <span class="text-base font-bold text-gray-900">$34.99</span>
+                                <a href="course-details.html"
+                                    class="text-xs bg-blue-600 text-white px-3 py-1.5 rounded hover:bg-blue-700">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 8 -->
+                    <div
+                        class="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between h-full">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&auto=format&fit=crop&q=80"
+                                alt="Product Management" class="h-44 w-full object-cover">
+                            <span
+                                class="absolute top-2 left-2 bg-yellow-400 text-gray-900 text-[11px] font-bold px-2 py-0.5 rounded">Bestseller</span>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between text-xs text-gray-500 mb-1">
+                                    <span>⏱ 7 Weeks</span>
+                                    <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded">All Levels</span>
+                                </div>
+                                <h3 class="font-bold text-gray-900 text-sm mt-1">Product Management Essentials</h3>
+                                <p class="text-xs text-gray-500 mt-1">Master agile workflows, user journey maps, and
+                                    product roadmaps.</p>
+                                <p class="text-xs text-gray-600 font-medium mt-2">Instructor: Lisa Wong</p>
+                                <p class="text-xs text-yellow-500 font-semibold mt-1">★ 4.8 (890)</p>
+                            </div>
+                            <div class="flex justify-between items-center mt-4 pt-3 border-t">
+                                <span class="text-base font-bold text-gray-900">$49.99</span>
+                                <a href="course-details.html"
+                                    class="text-xs bg-blue-600 text-white px-3 py-1.5 rounded hover:bg-blue-700">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 1 -->
+                    <div
+                        class="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between h-full">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=500&auto=format&fit=crop&q=80"
+                                alt="Full-Stack Web Dev" class="h-44 w-full object-cover">
+                            <span
+                                class="absolute top-2 left-2 bg-yellow-400 text-gray-900 text-[11px] font-bold px-2 py-0.5 rounded">Bestseller</span>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between text-xs text-gray-500 mb-1">
+                                    <span>⏱ 8 Weeks</span>
+                                    <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded">Beginner</span>
+                                </div>
+                                <h3 class="font-bold text-gray-900 text-sm mt-1">Full-Stack Web Development Bootcamp
+                                </h3>
+                                <p class="text-xs text-gray-500 mt-1">Learn HTML, CSS, JavaScript, React, and Node.js
+                                    with real projects.</p>
+                                <p class="text-xs text-gray-600 font-medium mt-2">Instructor: John Carter</p>
+                                <p class="text-xs text-yellow-500 font-semibold mt-1">★ 4.8 (1,250)</p>
+                            </div>
+                            <div class="flex justify-between items-center mt-4 pt-3 border-t">
+                                <span class="text-base font-bold text-gray-900">$49.99</span>
+                                <a href="course-details.html"
+                                    class="text-xs bg-blue-600 text-white px-3 py-1.5 rounded hover:bg-blue-700">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 2 -->
+                    <div
+                        class="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between h-full">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=500&auto=format&fit=crop&q=80"
+                                alt="Python Data Science" class="h-44 w-full object-cover">
+                            <span
+                                class="absolute top-2 left-2 bg-green-500 text-white text-[11px] font-bold px-2 py-0.5 rounded">New</span>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between text-xs text-gray-500 mb-1">
+                                    <span>⏱ 10 Weeks</span>
+                                    <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded">Intermediate</span>
+                                </div>
+                                <h3 class="font-bold text-gray-900 text-sm mt-1">Python for Data Science & Machine
+                                    Learning</h3>
+                                <p class="text-xs text-gray-500 mt-1">Analyze big datasets and train machine learning
+                                    models from scratch.</p>
+                                <p class="text-xs text-gray-600 font-medium mt-2">Instructor: Sarah Chen</p>
+                                <p class="text-xs text-yellow-500 font-semibold mt-1">★ 4.9 (980)</p>
+                            </div>
+                            <div class="flex justify-between items-center mt-4 pt-3 border-t">
+                                <span class="text-base font-bold text-gray-900">$59.99</span>
+                                <a href="course-details.html"
+                                    class="text-xs bg-blue-600 text-white px-3 py-1.5 rounded hover:bg-blue-700">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 3 -->
+                    <div
+                        class="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between h-full">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=500&auto=format&fit=crop&q=80"
+                                alt="Figma UI/UX" class="h-44 w-full object-cover">
+                            <span
+                                class="absolute top-2 left-2 bg-purple-600 text-white text-[11px] font-bold px-2 py-0.5 rounded">Featured</span>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between text-xs text-gray-500 mb-1">
+                                    <span>⏱ 6 Weeks</span>
+                                    <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded">All Levels</span>
+                                </div>
+                                <h3 class="font-bold text-gray-900 text-sm mt-1">UI/UX Design Masterclass in Figma</h3>
+                                <p class="text-xs text-gray-500 mt-1">Design user interfaces, mobile apps, and clickable
+                                    prototypes.</p>
+                                <p class="text-xs text-gray-600 font-medium mt-2">Instructor: Alex Vance</p>
+                                <p class="text-xs text-yellow-500 font-semibold mt-1">★ 4.7 (840)</p>
+                            </div>
+                            <div class="flex justify-between items-center mt-4 pt-3 border-t">
+                                <span class="text-base font-bold text-gray-900">$39.99</span>
+                                <a href="course-details.html"
+                                    class="text-xs bg-blue-600 text-white px-3 py-1.5 rounded hover:bg-blue-700">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 4 -->
+                    <div
+                        class="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between h-full">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&auto=format&fit=crop&q=80"
+                                alt="AWS Cloud" class="h-44 w-full object-cover">
+                            <span
+                                class="absolute top-2 left-2 bg-yellow-400 text-gray-900 text-[11px] font-bold px-2 py-0.5 rounded">Bestseller</span>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between text-xs text-gray-500 mb-1">
+                                    <span>⏱ 12 Weeks</span>
+                                    <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded">Advanced</span>
+                                </div>
+                                <h3 class="font-bold text-gray-900 text-sm mt-1">AWS Cloud Solutions & DevOps Pipeline
+                                </h3>
+                                <p class="text-xs text-gray-500 mt-1">Deploy, scale, and manage infrastructure in cloud
+                                    environments.</p>
+                                <p class="text-xs text-gray-600 font-medium mt-2">Instructor: Priya Patel</p>
+                                <p class="text-xs text-yellow-500 font-semibold mt-1">★ 4.8 (650)</p>
+                            </div>
+                            <div class="flex justify-between items-center mt-4 pt-3 border-t">
+                                <span class="text-base font-bold text-gray-900">$64.99</span>
+                                <a href="course-details.html"
+                                    class="text-xs bg-blue-600 text-white px-3 py-1.5 rounded hover:bg-blue-700">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center gap-2 pt-6">
+                    <a href="#"
+                        class="px-3 py-1.5 text-sm rounded border border-gray-300 text-gray-600 hover:bg-gray-100">Previous</a>
+                    <a href="#" class="px-3 py-1.5 text-sm rounded bg-blue-600 text-white font-semibold">1</a>
+                    <a href="#"
+                        class="px-3 py-1.5 text-sm rounded border border-gray-300 text-gray-600 hover:bg-gray-100">2</a>
+                    <a href="#"
+                        class="px-3 py-1.5 text-sm rounded border border-gray-300 text-gray-600 hover:bg-gray-100">3</a>
+                    <a href="#"
+                        class="px-3 py-1.5 text-sm rounded border border-gray-300 text-gray-600 hover:bg-gray-100">Next</a>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-10 mt-12">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <img src="images/logo.png" alt="EduConnect Logo" class="h-9 w-auto bg-white px-2 py-1 rounded">
+                <p class="text-xs text-gray-400 mt-3">Learn in-demand skills from industry professionals online.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold text-white text-sm mb-3">Quick Links</h4>
+                <ul class="text-xs space-y-2">
+                    <li><a href="index.html" class="hover:text-white">Home</a></li>
+                    <li><a href="courses.html" class="hover:text-white">Courses</a></li>
+                    <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-white text-sm mb-3">Categories</h4>
+                <ul class="text-xs space-y-2">
+                    <li><a href="courses.html" class="hover:text-white">Web Development</a></li>
+                    <li><a href="courses.html" class="hover:text-white">Data Science</a></li>
+                    <li><a href="courses.html" class="hover:text-white">UI/UX Design</a></li>
+                    <li><a href="courses.html" class="hover:text-white">Cloud Computing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-white text-sm mb-3">Contact</h4>
+                <p class="text-xs text-gray-400">Email: support@educonnect.com</p>
+                <p class="text-xs text-gray-400 mt-1">Phone: +1 234 567 890</p>
+            </div>
+        </div>
+        <div class="text-center text-xs text-gray-500 mt-8 pt-6 border-t border-gray-800">
+            &copy; 2026 EduConnect. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+
+</html>

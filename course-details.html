@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Stack Web Development Bootcamp — EduConnect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+            <a href="index.html">
+                <img src="images/logo.png" alt="EduConnect Logo" class="h-10 w-auto">
+            </a>
+
+            <div class="hidden md:flex items-center gap-6 font-medium text-gray-600">
+                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="courses.html" class="text-blue-600 font-semibold">Courses</a>
+                <a href="about.html" class="hover:text-blue-600">About</a>
+                <a href="contact.html" class="hover:text-blue-600">Contact</a>
+            </div>
+
+            <div class="hidden lg:flex items-center">
+                <input type="text" placeholder="Search for any courses" 
+                       class="border border-gray-300 rounded-l-lg px-3 py-1.5 text-sm focus:outline-none focus:border-blue-500">
+                <button class="bg-blue-600 text-white px-3 py-1.5 text-sm rounded-r-lg hover:bg-blue-700">Search</button>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <a href="register.html" class="text-gray-700 text-sm font-medium hover:text-blue-600">Login</a>
+                <a href="register.html" class="bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-blue-700">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    
+    <section class="bg-gray-900 text-white py-10">
+        <div class="max-w-7xl mx-auto px-4">
+
+            <div class="text-xs text-gray-400 mb-3 flex items-center gap-2">
+                <a href="index.html" class="hover:text-white">Home</a> &gt;
+                <a href="courses.html" class="hover:text-white">Courses</a> &gt;
+                <span class="text-gray-200">Web Development</span>
+            </div>
+
+            <div class="max-w-3xl">
+                <span class="bg-yellow-400 text-gray-900 text-xs font-bold px-2.5 py-0.5 rounded">Bestseller</span>
+                <span class="bg-gray-700 text-gray-200 text-xs px-2.5 py-0.5 rounded ml-2">Web Dev</span>
+
+                <h1 class="text-2xl sm:text-4xl font-bold mt-3">
+                    Full-Stack Web Development Bootcamp: React, Node.js & TypeScript
+                </h1>
+                <p class="text-gray-300 text-sm sm:text-lg mt-3">
+                    Build production-ready web applications from scratch. Learn frontend with React, backend with Node.js & Express, database modeling with MongoDB, and deployment.
+                </p>
+
+                <div class="flex flex-wrap items-center gap-4 text-xs sm:text-sm mt-4 text-gray-300">
+                    <span class="text-yellow-400 font-semibold">★ 4.8 (1,250 reviews)</span>
+                    <span>👥 8,420 students enrolled</span>
+                    <span>Created by <a href="#instructor" class="text-blue-400 underline">John Carter</a></span>
+                    <span>🌐 English</span>
+                    <span>Last updated: October 2026</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-4 py-10">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+            <div class="lg:col-span-2 space-y-10">
+
+                <!-- visible onlly in mobile -->
+                <div class="block lg:hidden bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=600&auto=format&fit=crop&q=80" 
+                         alt="Course preview" class="w-full h-48 object-cover rounded-md mb-4">
+                    <div class="flex align-items-end gap-2 mb-4">
+                        <span class="text-3xl font-bold text-gray-900">$49.99</span>
+                        <span class="text-sm text-gray-400 line-through">$99.99</span>
+                        <span class="text-xs bg-red-100 text-red-600 font-semibold px-2 py-0.5 rounded">50% Off</span>
+                    </div>
+                    <a href="register.html" class="block text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg w-full mb-2">
+                        Enroll in Course
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg border border-gray-200">
+                    <h2 class="text-xl font-bold text-gray-900 mb-4">What You Will Learn</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-gray-700">
+                        <div class="flex items-start gap-2">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span>Build responsive websites using semantic HTML5 and modern CSS3</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span>Master modern JavaScript (ES6+), async/await, and DOM manipulation</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span>Develop scalable single-page apps using React 19 and Tailwind CSS</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span>Create RESTful APIs and authentication with Node.js and Express</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span>Model and query data with MongoDB and Mongoose</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span>Deploy complete full-stack web applications to cloud servers</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg border border-gray-200">
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">Course Overview</h2>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-3">
+                        This comprehensive bootcamp is engineered to take you from total beginner to job-ready full-stack developer. You won't just watch videos—you will write code, solve challenges, and build 5 real-world portfolio projects.
+                    </p>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Throughout the 12 weeks, you will receive step-by-step guidance on best industry practices, clean code structure, version control with Git and GitHub, and interview preparation.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg border border-gray-200">
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">Requirements</h2>
+                    <ul class="list-disc list-inside text-sm text-gray-600 space-y-1.5">
+                        <li>A laptop or desktop computer with Windows, Mac, or Linux.</li>
+                        <li>A web browser (Chrome, Firefox, or Edge) and internet connection.</li>
+                        <li>No prior programming experience required—we start from zero.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg border border-gray-200">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-xl font-bold text-gray-900">Course Curriculum</h2>
+                        <span class="text-xs text-gray-500">3 Sections / 9 Lessons / 64 Total Hours</span>
+                    </div>
+
+                    <div class="space-y-4">
+
+                        <!-- Section 1 -->
+                        <div class="border border-gray-200 rounded-lg overflow-hidden">
+                            <div class="bg-gray-50 px-4 py-3 flex justify-between items-center font-semibold text-sm text-gray-800">
+                                <span>Section 1: HTML5 & Modern CSS3 Fundamentals</span>
+                                <span class="text-xs text-gray-500 font-normal">3 lessons / 18 hrs</span>
+                            </div>
+                            <div class="divide-y divide-gray-100 text-sm text-gray-600">
+                                <div class="px-4 py-2.5 flex justify-between items-center hover:bg-gray-50">
+                                    <span>▶ Lesson 1.1: Semantic HTML & Document Structure</span>
+                                    <span class="text-xs text-gray-400">45 mins</span>
+                                </div>
+                                <div class="px-4 py-2.5 flex justify-between items-center hover:bg-gray-50">
+                                    <span>▶ Lesson 1.2: Modern Flexbox & CSS Grid Layouts</span>
+                                    <span class="text-xs text-gray-400">1 hr 15 mins</span>
+                                </div>
+                                <div class="px-4 py-2.5 flex justify-between items-center hover:bg-gray-50">
+                                    <span>▶ Lesson 1.3: Responsive Web Design with Tailwind CSS</span>
+                                    <span class="text-xs text-gray-400">2 hrs</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section 2 -->
+                        <div class="border border-gray-200 rounded-lg overflow-hidden">
+                            <div class="bg-gray-50 px-4 py-3 flex justify-between items-center font-semibold text-sm text-gray-800">
+                                <span>Section 2: JavaScript Mastery & Dynamic DOM</span>
+                                <span class="text-xs text-gray-500 font-normal">3 lessons / 22 hrs</span>
+                            </div>
+                            <div class="divide-y divide-gray-100 text-sm text-gray-600">
+                                <div class="px-4 py-2.5 flex justify-between items-center hover:bg-gray-50">
+                                    <span>▶ Lesson 2.1: JavaScript Syntax, Arrays, & ES6 Objects</span>
+                                    <span class="text-xs text-gray-400">1 hr 30 mins</span>
+                                </div>
+                                <div class="px-4 py-2.5 flex justify-between items-center hover:bg-gray-50">
+                                    <span>▶ Lesson 2.2: DOM Events, Forms, and LocalStorage</span>
+                                    <span class="text-xs text-gray-400">1 hr 45 mins</span>
+                                </div>
+                                <div class="px-4 py-2.5 flex justify-between items-center hover:bg-gray-50">
+                                    <span>▶ Lesson 2.3: Async/Await, Promises & Fetching REST APIs</span>
+                                    <span class="text-xs text-gray-400">2 hrs 10 mins</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section 3 -->
+                        <div class="border border-gray-200 rounded-lg overflow-hidden">
+                            <div class="bg-gray-50 px-4 py-3 flex justify-between items-center font-semibold text-sm text-gray-800">
+                                <span>Section 3: React.js Frontend & Node.js Backend</span>
+                                <span class="text-xs text-gray-500 font-normal">3 lessons / 24 hrs</span>
+                            </div>
+                            <div class="divide-y divide-gray-100 text-sm text-gray-600">
+                                <div class="px-4 py-2.5 flex justify-between items-center hover:bg-gray-50">
+                                    <span>▶ Lesson 3.1: React Components, Props, and State Management</span>
+                                    <span class="text-xs text-gray-400">2 hrs 30 mins</span>
+                                </div>
+                                <div class="px-4 py-2.5 flex justify-between items-center hover:bg-gray-50">
+                                    <span>▶ Lesson 3.2: Building Node.js Express REST APIs & MongoDB</span>
+                                    <span class="text-xs text-gray-400">3 hrs</span>
+                                </div>
+                                <div class="px-4 py-2.5 flex justify-between items-center hover:bg-gray-50">
+                                    <span>▶ Lesson 3.3: User JWT Authentication & Cloud Deployment</span>
+                                    <span class="text-xs text-gray-400">2 hrs 45 mins</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="instructor" class="bg-white p-6 rounded-lg border border-gray-200">
+                    <h2 class="text-xl font-bold text-gray-900 mb-4">About the Instructor</h2>
+                    <div class="flex flex-col sm:flex-row gap-5 items-start">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&auto=format&fit=crop&q=80" 
+                             alt="John Carter" class="w-24 h-24 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900">John Carter</h3>
+                            <p class="text-xs text-blue-600 font-medium">Senior Full-Stack Architect & Educator</p>
+                            
+                            <div class="flex items-center gap-4 text-xs text-gray-500 my-2">
+                                <span>★ 4.9 Instructor Rating</span>
+                                <span>👥 28,000+ Students</span>
+                                <span>📚 6 Courses</span>
+                            </div>
+
+                            <p class="text-sm text-gray-600 leading-relaxed mt-2">
+                                John has 10+ years of professional engineering experience building scalable cloud web applications. He has taught web development to thousands of students across the globe with a focus on project-based learning.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg border border-gray-200">
+                    <div class="flex justify-between items-center mb-6">
+                        <h2 class="text-xl font-bold text-gray-900">Student Reviews</h2>
+                        <span class="text-yellow-500 font-bold text-sm">★ 4.8 Course Rating / 6 Reviews</span>
+                    </div>
+
+                    <div class="space-y-6">
+
+                        <!-- Review 1 -->
+                        <div class="border-b pb-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <div class="flex items-center gap-3">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80" 
+                                         alt="Emily W." class="w-9 h-9 rounded-full object-cover">
+                                    <div>
+                                        <p class="font-bold text-sm text-gray-900">Emily Watson</p>
+                                        <p class="text-xs text-gray-400">2 weeks ago</p>
+                                    </div>
+                                </div>
+                                <span class="text-yellow-400 text-xs">★★★★★</span>
+                            </div>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                This course completely changed my career trajectory. The explanations are crystal clear, and building the final project gave me the confidence to apply for developer roles!
+                            </p>
+                        </div>
+
+                        <!-- Review 2 -->
+                        <div class="border-b pb-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <div class="flex items-center gap-3">
+                                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&auto=format&fit=crop&q=80" 
+                                         alt="Rohit P." class="w-9 h-9 rounded-full object-cover">
+                                    <div>
+                                        <p class="font-bold text-sm text-gray-900">Rohit Patel</p>
+                                        <p class="text-xs text-gray-400">1 month ago</p>
+                                    </div>
+                                </div>
+                                <span class="text-yellow-400 text-xs">★★★★★</span>
+                            </div>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                Great curriculum! The React and Node.js sections are especially thorough. John explains complex async topics in a very simple, understandable way.
+                            </p>
+                        </div>
+
+                        <!-- Review 3 -->
+                        <div class="border-b pb-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <div class="flex items-center gap-3">
+                                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&auto=format&fit=crop&q=80" 
+                                         alt="Jessica L." class="w-9 h-9 rounded-full object-cover">
+                                    <div>
+                                        <p class="font-bold text-sm text-gray-900">Jessica Lim</p>
+                                        <p class="text-xs text-gray-400">1 month ago</p>
+                                    </div>
+                                </div>
+                                <span class="text-yellow-400 text-xs">★★★★☆</span>
+                            </div>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                Very detailed and practical. I had some difficulty in MongoDB indexing at first, but rewatching the video and following the starter code helped immensely.
+                            </p>
+                        </div>
+
+                        <!-- Review 4 -->
+                        <div class="border-b pb-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <div class="flex items-center gap-3">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" 
+                                         alt="Michael B." class="w-9 h-9 rounded-full object-cover">
+                                    <div>
+                                        <p class="font-bold text-sm text-gray-900">Michael Brown</p>
+                                        <p class="text-xs text-gray-400">2 months ago</p>
+                                    </div>
+                                </div>
+                                <span class="text-yellow-400 text-xs">★★★★★</span>
+                            </div>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                Best web development course for beginners. Covers both front and back end cleanly without unnecessary fluff. Highly recommended!
+                            </p>
+                        </div>
+
+                        <!-- Review 5 -->
+                        <div class="border-b pb-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <div class="flex items-center gap-3">
+                                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" 
+                                         alt="Sarah K." class="w-9 h-9 rounded-full object-cover">
+                                    <div>
+                                        <p class="font-bold text-sm text-gray-900">Sarah Jenkins</p>
+                                        <p class="text-xs text-gray-400">3 months ago</p>
+                                    </div>
+                                </div>
+                                <span class="text-yellow-400 text-xs">★★★★★</span>
+                            </div>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                Loved the practical quizzes and downloadable project files. Helped me transition from a marketing role into technical product design.
+                            </p>
+                        </div>
+
+                        <!-- Review 6 -->
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <div class="flex items-center gap-3">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop&q=80" 
+                                         alt="David N." class="w-9 h-9 rounded-full object-cover">
+                                    <div>
+                                        <p class="font-bold text-sm text-gray-900">David Nguyen</p>
+                                        <p class="text-xs text-gray-400">3 months ago</p>
+                                    </div>
+                                </div>
+                                <span class="text-yellow-400 text-xs">★★★★★</span>
+                            </div>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                10/10 course. Everything is structured in bite-sized lessons so it never feels overwhelming.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-bold text-gray-900 mb-4">Related Courses</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-lg border border-gray-200 flex gap-3 items-center">
+                            <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=200&auto=format&fit=crop&q=80" 
+                                 alt="React Course" class="w-20 h-20 rounded object-cover flex-shrink-0">
+                            <div>
+                                <h4 class="font-bold text-sm text-gray-900 hover:text-blue-600">
+                                    <a href="course-details.html">Modern React 19 & Next.js</a>
+                                </h4>
+                                <p class="text-xs text-gray-500 mt-1">6 Weeks / $44.99</p>
+                                <span class="text-xs text-yellow-500 font-semibold">★ 4.9</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-lg border border-gray-200 flex gap-3 items-center">
+                            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=200&auto=format&fit=crop&q=80" 
+                                 alt="Python Course" class="w-20 h-20 rounded object-cover flex-shrink-0">
+                            <div>
+                                <h4 class="font-bold text-sm text-gray-900 hover:text-blue-600">
+                                    <a href="course-details.html">Python for Data Science & AI</a>
+                                </h4>
+                                <p class="text-xs text-gray-500 mt-1">10 Weeks /; $59.99</p>
+                                <span class="text-xs text-yellow-500 font-semibold">★ 4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Desktop  -->
+            <div class="hidden lg:block lg:col-span-1">
+                <div class="sticky top-24 bg-white p-6 rounded-lg border border-gray-200 shadow-sm space-y-5">
+                    
+                    <div class="relative rounded-md overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=600&auto=format&fit=crop&q=80" 
+                             alt="Full-Stack course preview" class="w-full h-44 object-cover">
+                    </div>
+
+                    <div>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-3xl font-bold text-gray-900">$49.99</span>
+                            <span class="text-sm text-gray-400 line-through">$99.99</span>
+                            <span class="text-xs bg-red-100 text-red-600 font-semibold px-2 py-0.5 rounded">50% Off</span>
+                        </div>
+                        <p class="text-xs text-red-500 font-medium mt-1">⏰ Special sale ends in 2 days!</p>
+                    </div>
+
+                    <div class="space-y-2.5">
+                        <a href="register.html" class="block text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg w-full transition">
+                            Enroll in Course
+                        </a>
+                        <button class="w-full border border-gray-300 hover:bg-gray-50 text-gray-700 text-sm font-semibold py-2.5 rounded-lg transition">
+                            Add to Wishlist
+                        </button>
+                    </div>
+
+                    <div class="border-t pt-4">
+                        <h4 class="font-bold text-sm text-gray-900 mb-3">This course includes:</h4>
+                        <ul class="text-xs text-gray-600 space-y-2">
+                            <li class="flex items-center gap-2">
+                                <span>⏱</span> 64 hours of on-demand video
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span>📁</span> 14 downloadable resources & code files
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span>📱</span> Access on mobile and desktop
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span>♾️</span> Full lifetime access
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span>📜</span> Certificate of completion
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span>💬</span> Dedicated mentor Q&A support
+                            </li>
+                        </ul>
+                    </div>
+
+                    <p class="text-center text-xs text-gray-500 border-t pt-3">
+                        30-Day Money-Back Guarantee
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-300 py-10 mt-12">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <img src="images/logo.png" alt="EduConnect Logo" class="h-9 w-auto bg-white px-2 py-1 rounded">
+                <p class="text-xs text-gray-400 mt-3">Learn in-demand skills from industry professionals online.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold text-white text-sm mb-3">Quick Links</h4>
+                <ul class="text-xs space-y-2">
+                    <li><a href="index.html" class="hover:text-white">Home</a></li>
+                    <li><a href="courses.html" class="hover:text-white">Courses</a></li>
+                    <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-white text-sm mb-3">Categories</h4>
+                <ul class="text-xs space-y-2">
+                    <li><a href="courses.html" class="hover:text-white">Web Development</a></li>
+                    <li><a href="courses.html" class="hover:text-white">Data Science</a></li>
+                    <li><a href="courses.html" class="hover:text-white">UI/UX Design</a></li>
+                    <li><a href="courses.html" class="hover:text-white">Cloud Computing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-white text-sm mb-3">Contact</h4>
+                <p class="text-xs text-gray-400">Email: support@educonnect.com</p>
+                <p class="text-xs text-gray-400 mt-1">Phone: +1 234 567 890</p>
+            </div>
+        </div>
+        <div class="text-center text-xs text-gray-500 mt-8 pt-6 border-t border-gray-800">
+            &copy; 2026 EduConnect. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+
+</html>
